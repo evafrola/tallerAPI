@@ -6,7 +6,7 @@ function showDataListMeal (array) {
     for (const data of array) {
       containerList.innerHTML += `
       <div onclick="setMealID(${data.idMeal})">
-          <div>
+          <div class="custom-card">
               <h4>${data.strMeal}</h4>
               <img src="${data.strMealThumb}">
           </div>

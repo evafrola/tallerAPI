@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    background-color: #DFA67B;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.container {
+    text-align: center;
+}
+
+#categorie-meal, #list-meal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+#categorie-meal img, #list-meal img {
+    vertical-align: top;
+    max-height: 300px;
+}
+
+.custom-card {
+    border: 4px solid #F3DEBA;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #F3DEBA; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    flex-wrap:wrap ;
+}
+
+.custom-card {
+      flex: 0 0 calc(33.33% - 10px); /* Ajusta el ancho de las cartas y el margen */
+      margin-bottom: 20px; /* Ajusta la separación entre cartas */
+  }
+    
+.custom-card:hover {
+    transform: translateY(-25px); /* Elevación al pasar el mouse */
+}
+
+/*Estilo card meal individual*/
+.meal-card {
+    text-align: center;
+}
+
+.meal-card img {
+    width: 500px;
+}
+
+/*Fin de estilos*/
+
+/*Estilo del footer*/
+
+footer {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 3px solid #F3DEBA;
+}
+
+a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+/*Fin de estilos*/

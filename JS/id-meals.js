@@ -5,13 +5,14 @@ const listMealID = localStorage.getItem("idMeal");
 function showDataListMealID (array) {
     for (const data of array) {
       containerListID.innerHTML += `
-          <div>
+          <div class="meal-card">
               <h4>${data.strMeal}</h4>
               <img src="${data.strMealThumb}">
-              <p>Category: ${data.strCategory}</p>
-              <p>Instructions: ${data.strInstructions}</p>
+              <p><strong>Category: </strong> ${data.strCategory}</p>
+              <p><strong>Instructions:</strong> ${data.strInstructions}</p>
           </div>
-
+        
+          <div class="meal-card">
           <h3>Ingredient:</h3>
             <ul>
           `
